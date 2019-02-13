@@ -1,0 +1,36 @@
+<html>
+    <title></title>
+    <head>
+        <script type="text/javascript">
+        
+        
+        
+        //making a class to hold both arrays
+        class firstAndLastNames{
+            constructor(){
+
+                this.firstNames=["Juniper","Willow","Lola","Rose","Daisy"];
+                this.lastNames= ["Lightning","FireBreath","WindBreaker","Root","Air"];                
+            }
+            getRandomName(){
+                    return this.firstNames[Math.floor(Math.random()*this.firstNames.length)] + " " + this.lastNames[Math.floor(Math.random()*this.lastNames.length)];
+
+                }
+        }
+
+        nameMaker=new firstAndLastNames();
+        //tring to display the randomly selected names
+        document.body.innerHTML = nameMaker.getRandomName();      
+        </script>
+    </head>
+
+    <body>
+
+
+
+
+
+
+
+    </body>
+</html>
