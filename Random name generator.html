@@ -1,0 +1,54 @@
+<html>
+<head> 
+    <script type="text/javascript">
+    var Firstnames = ["Lillith", "lilly", "rose"];
+    var Lastnames = ["Sun","tick","bolder"];
+
+   
+        function showName(id,ary){
+            document.querySelector('#'+id).innerHTML = ary[getRandomIndex(ary)];
+
+        }
+        function showFirstName(){
+            showName('firstName',Firstnames);
+        }
+        
+    
+       
+
+        function getRandomIndex(ary){
+            return Math.floor(Math.random() * ary.length);
+
+        }
+
+        function showLastName(){
+          
+            showName('lastName',Lastnames);
+        }
+        
+        window.onload = function(){
+            showFirstName(); showLastName();
+        }
+        
+
+      
+
+      
+    
+    
+    
+    </script>
+   
+</head>
+
+<body>
+    <span id="firstName"></span> <span id="lastName"></span>
+    
+    
+    
+</body>
+
+
+
+
+</html>
